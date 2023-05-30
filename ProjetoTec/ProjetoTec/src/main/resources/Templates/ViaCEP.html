@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <h1>Via CEP</h1>
+    <form th:action="@{/cep}" th:object="${Cep}" >
+        <label> Entre com o CPF: </label>
+        <input type="text" id="cpf" class="cpf" th:field="*{cep}"/>
+        <p>obs:8 digitos e sem pontuações ou caracteres especiais</p>
+        <input type="submit" id="btn" class="btn" value="Enviar"/>
+    </form>
+</head>
+<body>
+</body>
+</html>

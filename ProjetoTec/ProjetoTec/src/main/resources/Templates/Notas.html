@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Média</title>
+  <h1>Média</h1>
+  <form th:action="@{/notas}" th:object="${medNote}">
+    <label>Entre com a nota 1:
+    <input type="number"  id="n1" class="n1"    th:field="${n1}"/><br><br>
+    </label>
+
+    <label>Entre com a nota 2:
+    <input type="number"  id="n2" class="n2" th:field="${n2}"/><br><br>
+    </label>
+
+    <label>Entre com o Projeto:
+    <input type="number"  id="proj" class="proj" th:field="${proj}"/><br><br>
+    </label>
+
+    <input type="submit" id="btn" class="btn" value="Calcular"/><br><br>
+
+    <label>Media Final
+      <h2 th:text="${media}"></h2>
+    </label>
+  </form>
+</head>
+<body>
+</body>
+</html>
